@@ -3,23 +3,25 @@ This document provides the steps for installing the software required to begin t
 1. Install Xcode  
 2. Install Homebrew  
 3. Install Java 1.8  
-4. Edit the system PATH  
-5. Install GIT  
-6. Install curl  
-7. Install node.js  
-8. Install API Connect  
-9. Install docker  
-10. Install cloudfoundry CLI  
-11. Install the IBM Container plugin for cloudfoundry  
+4. Create JAVA_HOME environment variable
+5. Install Gradle  
+6. Install GIT  
+7. Install curl  
+8. Install node.js  
+9. Install API Connect  
+10. Install Docker  
+11. Install Bluemix (IBM Cloud) CLI  
+12. Install the IBM Container Service plugins
+13. Install Kubernetes kubectl CLI
 
 ### Step 1: Install Xcode
-1.	In a browser search engine, type xcode and select [Xcode on the Mac App Store - iTunes – Apple]( https://itunes.apple.com/ca/app/xcode/id497799835?mt=12).  
+1.	In a browser search engine, type xcode and select [Xcode on the Mac App Store - iTunes ï¿½ Apple]( https://itunes.apple.com/ca/app/xcode/id497799835?mt=12).  
 Note: This was the link title at the time of writing. You search *itunes* for the XCode download link.  
 2. Click the Link View in Mac App Store.
 3. Click the **Get** button.
 4. It changes to an Install App button. Click it again.  
 NOTE: The download is approximately 4.5GB. It may take a long time.
-5. Verify the installation. Open Xcode, select **File > New > Playground**, then create the playground and verify that you see the string “Hello, playground”.
+5. Verify the installation. Open Xcode, select **File > New > Playground**, then create the playground and verify that you see the string ï¿½Hello, playgroundï¿½.
 
 ### Step 2: Install Homebrew
 1. Got to `https://brew.sh/` to see find the current installation process.
@@ -40,7 +42,7 @@ You should see a list of usage examples.
 `java`  
 You should see a list of usage options.
 
-### Step 4: Create JAVA_HOME
+### Step 4: Create JAVA_HOME environment variable
 1. Open bash_profile in an editor:  
 `$ vi ~/.bash_profile`
 2. Add the following line to the bottom of the file:  
@@ -53,25 +55,30 @@ You should see a list of usage options.
 `$ echo $JAVA_HOME`  
 You should see the full path to the jdk.
 6. Verify that your installation of Java is recognized. Type:  
-`java –version`  
+`java â€“version`  
 You should see information about the java version, the runtime environment, and Java HotSpot.
 
-### Step 5: Verify that GIT is installed
+### Step 5: Install Gradle
+1. Type
+` brew install gradle`
+
+### Step 6: Verify that GIT is installed
 1. Type  
-`git –version`
-2. Verify that the response is ‘git version 2.7.x’ (your version number may be later).
+`git â€“version`
+2. Verify that the response is â€˜git version 2.7.xâ€™ (your version number may be later).
+3. If git is not installed, go to https://git-scm.com/download/mac and follow the instructions to install it.
 
 ### Step 6: Verify that curl is installed
 1. Type
 `curl http://www.google.com`
 2. Verify that the response is the HTML for the Google page.  
-**NOTE**: If the response is ‘The document has moved’, then curl was successfully installed, but the url is not correct. According to your geography, you need to change the extension.
+**NOTE**: If the response is ï¿½The document has movedï¿½, then curl was successfully installed, but the url is not correct. According to your geography, you need to change the extension.
 
 ### Step 7: Install node.js
 1.Type  
 	`brew install node `
 2. Verify the installation:  
-`node –v`  
+`node ï¿½v`  
 The response is the version number (for example, v4.2.6).
 4. Type  
 `npm -v`  
@@ -79,11 +86,11 @@ Again, the response is the version number.
 
 ### Step 8: Install API Connect
 Use npm to install API Connect:  
-1. Type ` npm install –g apiconnect`  
+1. Type ` npm install ï¿½g apiconnect`  
 NOTE: This takes some time. You see some warnings about deprecations; you can ignore them.
 2. Verify the installation by typing  
-`apic –v`  
-You are asked to accept the license, and to allow usage information to be collected. Take the default answers for these (‘Yes’ and ‘No’). You then see the version number.
+`apic ï¿½v`  
+You are asked to accept the license, and to allow usage information to be collected. Take the default answers for these (ï¿½Yesï¿½ and ï¿½Noï¿½). You then see the version number.
 
 ### Step 9: Install Docker
 1. In a browser, open   
@@ -102,13 +109,13 @@ You install cloudfoundry using a package manager.
 2. Install:  
 `$ brew install cf-cli`
 3. In order to verify the installation, type  
-`cf –v`  
+`cf ï¿½v`  
 The response shows the version number.
 
 ### Step 11: Install the IBM Container plugin for cloudfoundry
 1. Use cloudfoundry to install the container plugin:  
 `cf install-plugin https://static-ice.ng.bluemix.net/ibm-containers-mac`
-2. Answer ‘**y**’ to the question about the installation.
+2. Answer ï¿½**y**ï¿½ to the question about the installation.
 3. Verify that the installation was successful by typing  
 `cf ic`  
 NOTE: You may see the message *Authentication has expired.* If so, log back in with `cf login`.
