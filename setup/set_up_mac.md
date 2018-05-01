@@ -20,7 +20,7 @@ Note: This was the link title at the time of writing. You search *itunes* for th
 3. Click the **Get** button.
 4. It changes to an Install App button. Click it again.  
 NOTE: The download is approximately 4.5GB. It may take a long time.
-5. Verify the installation. Open Xcode, select **File > New > Playground**, then create the playground and verify that you see the string �Hello, playground�.
+5. Verify the installation. Open Xcode, select **File > New > Playground**, then create the playground and verify that you see the string __Hello, playground__.
 
 ### Step 2: Install Homebrew
 1. Got to `https://brew.sh/` to see find the current installation process.
@@ -71,7 +71,7 @@ You should see information about the java version, the runtime environment, and 
 1. Type
 `curl http://www.google.com`
 2. Verify that the response is the HTML for the Google page.  
-**NOTE**: If the response is �The document has moved�, then curl was successfully installed, but the url is not correct. According to your geography, you need to change the extension.
+**NOTE**: If the response is __The document has moved__, then curl was successfully installed, but the url is not correct. According to your geography, you need to change the extension.
 3. If you do not have curl installed, you can get it from the Mac App Store (http://macappstore.org/curl), or you can find various version binaries and source code at https://curl.haxx.se/download.html .
 
 ### Step 8: Install node.js
@@ -91,15 +91,15 @@ Again, the response is the version number.
 3. Click the button `Download from Docker Store`.
 4. Follow the instructions on the web page to install Docker and make sure it is running.
 
-### Step 10: Install the IBM Cloud Bluemix CLI
+### Step 10: Install the IBM Cloud (Bluemix) CLI
 1. In a browser, go to https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html
-2. Click the installer for MacOS and follow the instructions to install the Bluemix CLI.
+2. Click the installer for MacOS and follow the instructions to install the IBM Cloud CLI.
 3. Type `bx -v` to return the version number.
 
 ### Step 11: Install the IBM Container Service plugins
 There are two plugins associated with the IBM Cloud Container Service that you will need for the labs. They are the plugin for the container service itself (`bx cs` commands) and the plugin for the container registry (`bx cr` commands).
 1. Type  
-`bx plugin install container-service -r Bluemix`
+`bx plugin install container-service -r Bluemix`<br>
 `bx plugin install container-registry -r Bluemix`
 2. Check that the plugins are installed by typing
 `bx plugin list`
