@@ -7,12 +7,11 @@ This document provides the steps for installing the software required to begin t
 5. Install Gradle  
 6. Install GIT  
 7. Install curl  
-8. Install node.js  
-9. Install API Connect  
-10. Install Docker  
-11. Install Bluemix (IBM Cloud) CLI  
-12. Install the IBM Container Service plugins
-13. Install Kubernetes kubectl CLI
+8. Install node.js   
+9. Install Docker  
+10. Install Bluemix (IBM Cloud) CLI  
+11. Install the IBM Container Service plugins
+12. Install Kubernetes kubectl CLI
 
 ### Step 1: Install Xcode
 1.	In a browser search engine, type xcode and select [Xcode on the Mac App Store - iTunes � Apple]( https://itunes.apple.com/ca/app/xcode/id497799835?mt=12).  
@@ -68,56 +67,46 @@ You should see information about the java version, the runtime environment, and 
 2. Verify that the response is ‘git version 2.7.x’ (your version number may be later).
 3. If git is not installed, go to https://git-scm.com/download/mac and follow the instructions to install it.
 
-### Step 6: Verify that curl is installed
+### Step 7: Verify that curl is installed
 1. Type
 `curl http://www.google.com`
 2. Verify that the response is the HTML for the Google page.  
 **NOTE**: If the response is �The document has moved�, then curl was successfully installed, but the url is not correct. According to your geography, you need to change the extension.
+3. If you do not have curl installed, you can get it from the Mac App Store (http://macappstore.org/curl), or you can find various version binaries and source code at https://curl.haxx.se/download.html .
 
-### Step 7: Install node.js
-1.Type  
+### Step 8: Install node.js
+1. Type  
 	`brew install node `
 2. Verify the installation:  
-`node �v`  
+`node -v`  
 The response is the version number (for example, v4.2.6).
-4. Type  
+3. Type  
 `npm -v`  
 Again, the response is the version number.
-
-### Step 8: Install API Connect
-Use npm to install API Connect:  
-1. Type ` npm install �g apiconnect`  
-NOTE: This takes some time. You see some warnings about deprecations; you can ignore them.
-2. Verify the installation by typing  
-`apic �v`  
-You are asked to accept the license, and to allow usage information to be collected. Take the default answers for these (�Yes� and �No�). You then see the version number.
 
 ### Step 9: Install Docker
 1. In a browser, open   
 [https://docs.docker.com/docker-for-mac/](https://docs.docker.com/docker-for-mac/)
-2. Scroll down and click the button *Get Docker for Mac (stable)*
-3. Open the downloaded file.
-4. A window opens with two icons. Drag the left *Docker.app* icon onto the right *Applications* icon.
-5. In the *Applications* directory, double-click Docker.app.
-6. Verify that the whale icon is added to the status bar at the top of the screen.
-7. Click the icon to verify that Docker is running.
+2. In the left pane, click `Install Docker for Mac`.
+3. Click the button `Download from Docker Store`.
+4. Follow the instructions on the web page to install Docker and make sure it is running.
 
-### Step 10: Install cloudfoundry CLI
-You install cloudfoundry using a package manager.
-1. In a Terminal, type  
-`$ brew tap cloudfoundry/tap`
-2. Install:  
-`$ brew install cf-cli`
-3. In order to verify the installation, type  
-`cf �v`  
-The response shows the version number.
+### Step 10: Install the IBM Cloud Bluemix CLI
+1. In a browser, go to https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html
+2. Click the installer for MacOS and follow the instructions to install the Bluemix CLI.
+3. Type `bx -v` to return the version number.
 
-### Step 11: Install the IBM Container plugin for cloudfoundry
-1. Use cloudfoundry to install the container plugin:  
-`cf install-plugin https://static-ice.ng.bluemix.net/ibm-containers-mac`
-2. Answer �**y**� to the question about the installation.
-3. Verify that the installation was successful by typing  
-`cf ic`  
-NOTE: You may see the message *Authentication has expired.* If so, log back in with `cf login`.
+### Step 11: Install the IBM Container Service plugins
+There are two plugins associated with the IBM Cloud Container Service that you will need for the labs. They are the plugin for the container service itself (`bx cs` commands) and the plugin for the container registry (`bx cr` commands).
+1. Type  
+`bx plugin install container-service -r Bluemix`
+`bx plugin install container-registry -r Bluemix`
+2. Check that the plugins are installed by typing
+`bx plugin list`
 
-This completes the setup for the Mac environment.
+### Step 12: Install the Kubernetes kubectl CLI
+1. type
+`brew install kubectl`
+More information can be found at https://kubernetes.io/docs/tasks/tools/install-kubectl.
+
+This completes the setup tasks to perform the hands-on labs on your MacOS native environment.
