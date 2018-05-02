@@ -14,7 +14,7 @@ This document provides the steps for installing the software required to begin t
 12. Install Kubernetes kubectl CLI
 
 ### Step 1: Install Xcode
-1.	In a browser search engine, type xcode and select [Xcode on the Mac App Store - iTunes � Apple]( https://itunes.apple.com/ca/app/xcode/id497799835?mt=12).  
+1.	In a browser search engine, type xcode and select [Xcode on the Mac App Store - iTunes Apple]( https://itunes.apple.com/ca/app/xcode/id497799835?mt=12).  
 Note: This was the link title at the time of writing. You search *itunes* for the XCode download link.  
 2. Click the Link View in Mac App Store.
 3. Click the **Get** button.
@@ -96,7 +96,7 @@ Again, the response is the version number.
 2. Click the installer for MacOS and follow the instructions to install the IBM Cloud CLI.
 3. Type `bx -v` to return the version number.
 
-### Step 11: Install the IBM Container Service plugins
+### Step 11: Install the IBM Cloud Container Service plugins
 There are two plugins associated with the IBM Cloud Container Service that you will need for the labs. They are the plugin for the container service itself (`bx cs` commands) and the plugin for the container registry (`bx cr` commands).
 1. Type  
 `bx plugin install container-service -r Bluemix`<br>
@@ -108,5 +108,11 @@ There are two plugins associated with the IBM Cloud Container Service that you w
 1. type
 `brew install kubectl`
 More information can be found at https://kubernetes.io/docs/tasks/tools/install-kubectl.
+
+### Step 13: Install the MYSQL client
+The easiest way to do this is to just install the full MYSQL product, then use the client from it. You should install MYSQL version 5.7.
+1. Type
+`brew install mysql@5.7`
+
 
 This completes the setup tasks to perform the hands-on labs on your MacOS native environment.
