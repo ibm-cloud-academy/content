@@ -1,4 +1,4 @@
-## Preparing a macOS Machine for the Labs
+## Preparing a macOS machine for the Labs
 This document provides the steps for installing the software required to begin the exercises on a Mac computer. The sequence is as follows:  
 1. Install Xcode  
 2. Install Homebrew  
@@ -112,5 +112,3 @@ More information can be found at https://kubernetes.io/docs/tasks/tools/install-
 The easiest way to do this is to just install the full MYSQL product, then use the client from it. You should install MYSQL version 5.7.
 1. Type
 `brew install mysql@5.7`
-
-This completes the setup tasks for MacOS.
