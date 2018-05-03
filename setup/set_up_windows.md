@@ -26,9 +26,9 @@ This document provides the steps to install the software required to begin the e
 6.	Select the .exe file for Windows x64 (__jdk-8u171-windows-x64.exe__).  The file is downloaded to the machine's Download directory.
 7.	 Run the Windows executable.  Navigate to the Download directory. Double click __jdk-8u171-windows-x64.exe__.
 8.	At the Welcome screen, click __Next__.
-9.	Accept the features to install.  Accept the default install location __C:\Program Files\Java\jdk1.8.0_171\__.  Click __Next__.
+9.	Accept the features to install.  Accept the default install location __C:\Program Files\Java\jdk1.8.0_171__.  Click __Next__.
 10.	Upon successful installation, click __Close__.
-11.	Verify that the installation was successful.  Open a command prompt.  Change directories to __C:\Program Files\Java\jdk1.8.0_171\__. You should see 6 directories, 6 files, and 2 zip files.
+11.	Verify that the installation was successful.  Open a command prompt.  Change directories to __C:\Program Files\Java\jdk1.8.0_171__. You should see 6 directories, 6 files, and 2 zip files.
 
 ### Step 2: Add JAVA_HOME variable to the System PATH  
 
@@ -63,7 +63,7 @@ Add JAVA_HOME to the Path by editing an environment variable.
 14.	You should see the response `git version 2.17.windows.1`
 
 ### Step 5:  Install curl
-1.	Create a folder named:  C:\curl
+1.	Create a folder named:  __C:\curl__.
 2.	Go to http://curl.haxx.se/download.html and download the zip file for the Win64 version of cURL:
 Scroll to the __Win64-Generic__ section.  Locate the latest Win64 ia64 zip version with SSL support. Click the version number to start the download.
 3.	Save the zip file.
