@@ -1,4 +1,4 @@
-## Preparing a macOS machine for the Labs
+# Preparing a macOS machine for the Labs
 This document provides the steps for installing the software required to begin the exercises on a Mac computer. The sequence is as follows:  
 1. Install curl  
 2. Install the IBM Cloud Developer Tools
@@ -9,7 +9,7 @@ This document provides the steps for installing the software required to begin t
 7. Install node.js   
 8. Install the MYSQL client
 
-### Step 1: Install curl
+## Step 1: Install curl
 1. In your browser, go to `http://macappstore.org/curl/`. Follow the installation instructions on the web site.
 2. Verify curl is installed by typing the following into a terminal window:
 `curl http://www.google.com`
@@ -17,13 +17,13 @@ This document provides the steps for installing the software required to begin t
 **NOTE**: If the response is __The document has moved__, then curl was successfully installed, but the url is not correct. According to your geography, you need to change the extension.
 4. If you do not have curl installed, you can get it from the Mac App Store (http://macappstore.org/curl), or you can find various version binaries and source code at https://curl.haxx.se/download.html.
 
-### Step 2: Install the IBM Cloud Developer Tools
+## Step 2: Install the IBM Cloud Developer Tools
 
 1. Follow the instructions at: 
 https://console.bluemix.net/docs/cli/index.html#overview
 to install the IBM Cloud Developer Tools.
 
-### Step 3: Install Java JDK 1.8
+## Step 3: Install Java JDK 1.8
 1. In a browser, open https://www.oracle.com
 2. In the list of menu options, click __Downloads and Trials__.
 3. Click __Java for Developers__.
@@ -36,7 +36,7 @@ to install the IBM Cloud Developer Tools.
 `java` in a terminal window.
 You should see a list of usage options.
 
-### Step 4: Create JAVA_HOME environment variable
+## Step 4: Create JAVA_HOME environment variable
 1. Open bash_profile in an editor:  
 `$ vi ~/.bash_profile`
 2. Add the following line to the bottom of the file:  
@@ -51,7 +51,7 @@ You should see the full path to the jdk.
 `java –version`  
 You should see information about the java version, the runtime environment, and Java HotSpot.
 
-### Step 5: Install Xcode
+## Step 5: Install Xcode
 1. In a browser search engine, type `xcode` and select [Xcode on the Mac App Store - iTunes Apple]( https://itunes.apple.com/ca/app/xcode/id497799835?mt=12).  
 2. Click the link __View in Mac App Store__.
 3. Click the __Get__ button.
@@ -59,11 +59,11 @@ You should see information about the java version, the runtime environment, and 
 NOTE: The download is approximately 4.5GB. It may take a long time.
 5. Verify the installation. Open __Xcode__, select __File > New > Playground__. Create the playground and verify that you see the string __Hello, playground__.
 
-### Step 6: Install Gradle
+## Step 6: Install Gradle
 1. Type
 ` brew install gradle`
 
-### Step 7: Install node.js
+## Step 7: Install node.js
 1. Type   
 	`brew install node `
 2. Verify the installation:  
@@ -73,7 +73,7 @@ The response is the version number (for example, v4.2.6).
 `npm -v`  
 Again, the response is the version number.
 
-### Step 8: Install the MYSQL client
+## Step 8: Install the MYSQL client
 The easiest way to do this is to just install the full MYSQL product, then use the client from it. You should install MYSQL version 5.7.
 1. Type
 `brew install mysql@5.7`

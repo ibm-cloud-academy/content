@@ -1,4 +1,4 @@
-## Preparing a Linux machine or virtual machine for the Labs
+# Preparing a Linux machine or virtual machine for the Labs
 This document provides the steps to install the software necessary for the lab exercises on a Linux machine. It can also be used to set up the software on a VMware Linux virtual machine.
 
 If you are working with a native Linux machine and not a virtual machine, you can start with Step 4. You can also skip to Step 4 if you want to work with an existing Ubuntu virtual machine image.
@@ -17,7 +17,7 @@ If you are going to create a Linux virtual machine on a Windows host, verify the
 1. make sure you have at least 22GB of available disk space (20GB for virtual disk and 2GB for the Ubuntu iso image).  
 2. Make sure IntelVT-X is enabled . For example, on a Lenovo Thinkpad W530, in the BIOS select __Security > Virtualization > Enable Intel VT-X__.
 
-### Step 1: Install VMware
+## Step 1: Install VMware
 
 1. In a browser, open [http://www.vmware.com/]( http://www.vmware.com).  
 2. From the left navigation bar, Click the __DOWNLOADS__ link.
@@ -26,13 +26,13 @@ If you are going to create a Linux virtual machine on a Windows host, verify the
 5. Download the installation file.
 6. Install the VMware product with the default options.
 
-### Step 2: Download the Ubuntu Operating System
+## Step 2: Download the Ubuntu Operating System
 
 1. In a browser, open [https://releases.ubuntu.com/16.04]( https://releases.ubuntu.com/16.04).
 2. Click the __64-bit PC (AMD64) desktop image__ link.
 3. Save the .iso file anywhere that is convenient. The file size is approximately 1.5 GB.
 
-### Step 3: Create a virtual machine
+## Step 3: Create a virtual machine
 You use the Ubuntu iso file as the OS in the VMware image. You create a new virtual machine, and point it to the iso file you just downloaded.
 
 1. If VMware Workstation is not open, open it now.  
@@ -73,7 +73,7 @@ __NOTE:__ If there is a problem, you see the message __Cannot read this file__, 
 
 The rest of the instructions apply to the image you have just created if you did that, or your native Linux operating system. Thus, 'In a browser...' means a browser on the image or on your native Linux system.
 
-### Step 4: Install curl
+## Step 4: Install curl
 
 1. Run the following command (At the message __Do you want to continue__, type __Y__):  
 `sudo apt-get install curl`
@@ -82,13 +82,13 @@ The rest of the instructions apply to the image you have just created if you did
 3. Verify that the response is HTML for the Google home page.  
 __NOTE__: If the response is __The document has moved__, then curl was successfully installed, but the url is not correct. According to your geography, you need to change the extension.
 
-### Step 5: Install the IBM Cloud Developer Tools
+## Step 5: Install the IBM Cloud Developer Tools
 
 1. Follow the instructions at: 
 https://console.bluemix.net/docs/cli/index.html#overview
 to install the IBM Cloud Developer Tools.
 
-### Step 6: Install Java JDK 1.8
+## Step 6: Install Java JDK 1.8
 
 1.	In a browser, open https://www.oracle.com
 2.	In the list of menu options, click __Trials and Downloads__.
@@ -117,7 +117,7 @@ You now have the compressed file on your image. The next step is to move it to t
 `ls`  
 You should see several directories, files, and zip files.
 
-### Step 7: Create JAVA_HOME environment variable
+## Step 7: Create JAVA_HOME environment variable
 You add JAVA_HOME to the PATH by editing the profile file.  
 
 1. Open the __/etc/profile__ file in an editor:  
@@ -141,7 +141,7 @@ The final step is to provide the information about the new PATH to the system. Y
 `java -version`
 5. You should see information about the java version, Java runtime, and Java HotSpot.
 
-### Step 8: Install node.js
+## Step 8: Install node.js
 Ubuntu includes Node.js in its default repositories.  The version that was used for this installation was __4.2.6__. Your version might be different.
 
 1. Install it by typing the __apt install__ command (At the message __Do you want to continue__, type __Y__):  
@@ -167,8 +167,8 @@ Ubuntu includes Node.js in its default repositories.  The version that was used 
   zlib: '1.2.8' }
 ```
 
-### Step 10: Install the MYSQL client
-You can install MYSQL version 5.7 client using apt-get.
+## Step 9: Install the MYSQL client
+You can install MYSQL version 5.7 client using apt.
 1. Type
 `sudo apt install mysql-client-5.7`
 

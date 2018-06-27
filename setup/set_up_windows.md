@@ -1,4 +1,4 @@
-## Preparing a Windows machine for the Labs
+# Preparing a Windows machine for the Labs
 
 This document provides the steps to install the software required to begin the exercises on a Windows machine.  The instructions were written for a Windows 7 Professional machine.  Exceptions have been noted for Windows 8 and Windows 10. The sequence is as follows:
 
@@ -11,7 +11,7 @@ This document provides the steps to install the software required to begin the e
 7. Install the MYSQL client
 8. Install Cygwin
 
-### Step 1:  Install curl
+## Step 1:  Install curl
 1. Create a folder named:  __C:\curl__.
 2. Go to http://curl.haxx.se/download.html and download the zip file for the Win64 version of cURL:
 Scroll to the __Win64-Generic__ section.  Locate the latest Win64 ia64 zip version with SSL support. Click the version number to start the download.
@@ -22,13 +22,13 @@ Scroll to the __Win64-Generic__ section.  Locate the latest Win64 ia64 zip versi
 7. Add __C:\curl__ to the Windows PATH environment variable so the curl command is available from any location at the command prompt.
 8. Verify that the installation is complete. Open a command prompt and enter `curl https://www.google.com`. The request returns the html in the command window.
 
-### Step 2: Install the IBM Cloud Developer Tools
+## Step 2: Install the IBM Cloud Developer Tools
 
 1. Follow the instructions at: 
 https://console.bluemix.net/docs/cli/index.html#overview
 to install the IBM Cloud Developer Tools.
 
-### Step 3: Install Java JDK 1.8
+## Step 3: Install Java JDK 1.8
 
 1. In a browser, open https://www.oracle.com
 2. In the list of menu options, click __Downloads and Trials__.
@@ -42,7 +42,7 @@ to install the IBM Cloud Developer Tools.
 10. Upon successful installation, click __Close__.
 11. Verify that the installation was successful.  Open a command prompt.  Change directories to __C:\Program Files\Java\jdk1.8.0_171__. You should see 6 directories, 6 files, and 2 zip files.
 
-### Step 4: Add JAVA_HOME variable to the System PATH  
+## Step 4: Add JAVA_HOME variable to the System PATH  
 
 Add JAVA_HOME to the Path by editing an environment variable.
 
@@ -54,24 +54,24 @@ Add JAVA_HOME to the Path by editing an environment variable.
 `java -version`.
 6. You should see information about the Java version, Java runtime, and Java HotSpot.
 
-### Step 5: Install gradle
+## Step 5: Install gradle
 1. In your browser, go to https://gradle.org/install/.
 2. Follow the instructions for Windows installation. For most users, the instructions in the __Install manually__ section will be the easiest to follow.
 
-### Step 6:  Install node.js
+## Step 6:  Install node.js
 1. Go to https://nodejs.org/en/
 2. There are two versions listed. Download the recommended version, which will be an msi installer file.
 3. Run the msi file and install with the default options.
 4. Verify the installation. At a command prompt, type `node -v`. The response is a version number.
 5. Type `npm -v`. The response is a version number, along with a notice about any updates that are available.
 
-### Step 7: Install the MYSQL Client
+## Step 7: Install the MYSQL Client
 1. Open a browser to https://dev.mysql.com/downloads/mysql/
 2. Download the ZIP Archive version of the Windows 64 bit MYSQL 5.7 Installer. It should be approximately 320 MB.
 3. When the ZIP archive is downloaded, extract it to the directory of your choice.
 4. You will only need the mysql.exe executable. From the bin subdirectory under your extraction directory, move or copy the mysql.exe file to any directory in your PATH.
 
-### Step 8: Install Cygwin
+## Step 8: Install Cygwin
 
 There are certain times in the labs where the way that Windows interprets quote characters makes it easier for you to issue those commands from a Linux shell. You can have that Linux shell available by installing Cygwin.
 
