@@ -20,7 +20,7 @@ This document provides the steps for installing the software required to begin t
 ## Step 2: Install the IBM Cloud Developer Tools
 
 1. Follow the instructions at: 
-https://console.bluemix.net/docs/cli/index.html#overview
+https://cloud.ibm.com/docs/cli/index.html#overview
 to install the IBM Cloud Developer Tools.
 
 ## Step 3: Install Java JDK 1.8
