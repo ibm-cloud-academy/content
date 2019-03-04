@@ -85,7 +85,7 @@ __NOTE__: If the response is __The document has moved__, then curl was successfu
 ## Step 5: Install the IBM Cloud Developer Tools
 
 1. Follow the instructions at: 
-https://console.bluemix.net/docs/cli/index.html#overview
+https://cloud.ibm.com/docs/cli/index.html#overview
 to install the IBM Cloud Developer Tools.
 
 ## Step 6: Install Java JDK 1.8
