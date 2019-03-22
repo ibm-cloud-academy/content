@@ -66,7 +66,7 @@ Code Ready is a web based IDE (similar to Orion)
 [https://blog.openshift.com/how-and-why-were-changing-deployment-topology-in-openshift-4-0/](https://blog.openshift.com/how-and-why-were-changing-deployment-topology-in-openshift-4-0/)
 
 ### OpenShift Blog:
-[https://blog.openshift.com]()https://blog.openshift.com
+[https://blog.openshift.com](https://blog.openshift.com)
 
 ### Red Hat Containers Community of Practice
 [http://uncontained.io](http://uncontained.io)
