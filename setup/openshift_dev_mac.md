@@ -1,6 +1,6 @@
-# Preparing a macOS machine for RedHat OPenShift
+# Preparing a macOS machine for Red Hat OpenShift
 
-This document provides a list of software to install on a Mac for a RedHat OpenShift development environment. 
+This document provides a list of software to install on a Mac for a Red Hat OpenShift development environment. 
   
 - [Prerequisites](#prerequisites)  
 - [Command line utilities](#command-line-utilities)
@@ -32,13 +32,15 @@ brew install docker-machine-driver-xhyve
 sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 ```
+
 Stern -- Log tail for multiple kube clusters
 ```
 brew install stern
 ```
 
 ## Minishift
-Minishift is called RedHat Container Development Kit
+
+Minishift is called Red Hat Container Development Kit
 
 ### Red Hat Container Development Kit 3.8 -- Mar 2019
 [https://developers.redhat.com/products/cdk/](https://developers.redhat.com/products/cdk/)
@@ -75,7 +77,7 @@ Code Ready is a web based IDE (similar to Orion)
 ### OpenShift Do -- Developer's Tool
 [https://openshiftdo.org](https://openshiftdo.org)
 
-Container Development Kit for OCP 3 -- Free Developer registration required
+Container Development Kit for OCP 3 -- Developer registration required (free)
 [https://developers.redhat.com/products/cdk/overview/](https://developers.redhat.com/products/cdk/overview/)
 
 ### Operator SDK
@@ -87,7 +89,7 @@ Container Development Kit for OCP 3 -- Free Developer registration required
 [https://buildah.io/](https://buildah.io/)
 
 ### Awesome Operators -- list of operators
-https://github.com/operator-framework/awesome-operators
+[https://github.com/operator-framework/awesome-operators](https://github.com/operator-framework/awesome-operators)
 
 ### Community Operators -- for OCP 4 Marketplace
 [https://github.com/operator-framework/community-operators](https://github.com/operator-framework/community-operators)
