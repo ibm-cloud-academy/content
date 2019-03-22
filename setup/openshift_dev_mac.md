@@ -1,18 +1,21 @@
 # Preparing a macOS machine for RedHat OPenShift
-This document provides the steps for installing the software required to begin the exercises on a Mac computer. The sequence is as follows:  
-- [Prerequisites](##prerequisites)  
-- [Command line utilities](##command-line-utilities)
-- [Additional resources](##additional-resources)
 
-## Prerequisites 
+This document provides a list of software to install on a Mac for a RedHat OpenShift development environment. 
+  
+- [Prerequisites](#prerequisites)  
+- [Command line utilities](#command-line-utilities)
+- [MiniShift](#minishift)
+- [Additional resources](#additional-resources)
+
+##Prerequisites 
 
 You should install [HomeBrew](https://brew.sh/) 
 This was created on macOS 10.14.3 Mojave
 Some of the items listed here are not available for Windows 
 
-## Command line utilities
+##Command line utilities
 
-#### OpenShift client utilities -- oc 
+####OpenShift client utilities -- oc 
 ```
 brew install openshift-cli
 ```
@@ -34,51 +37,20 @@ Stern -- Log tail for multiple kube clusters
 brew install stern
 ```
 
-## Minishift
+##Minishift
 Minishift is called RedHat Container Development Kit
 
 ### Red Hat Container Development Kit 3.8 -- Mar 2019
 [https://developers.redhat.com/products/cdk/](https://developers.redhat.com/products/cdk/)
 
 
-brew install docker-machine-driver-xhyve
-sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+### Code Ready
 
+Code Ready is a web based IDE (similar to Orion)
 
-OpenShift server started.
+[https://developers.redhat.com/products/codeready-workspaces/getting-started](https://developers.redhat.com/products/codeready-workspaces/getting-started)
 
-The server is accessible via web console at:
-    https://192.168.64.2:8443/console
-
-You are logged in as:
-    User:     developer
-    Password: <any value>
-
-To login as administrator:
-    oc login -u system:admin
-
-https://developers.redhat.com/articles/cdk-nodejs-openshift-web-console
-
-oc new-app https://github.com/openshift/nodejs-ex -l name=mao-new-app --allow-missing-imagestream-tags
-
-
--=-=-=-=-=-=-=-=-=-=-=-=-=
-Code Ready
--=-=-=-=-=-=-=-=-=-=-=-=-=
-
-https://developers.redhat.com/products/codeready-workspaces/getting-started
-
-https://developers.redhat.com/crw-hw/
-
-==========================
-Brew stuff
-==========================
-brew install openshift-cli
-brew install docker-machine-driver-xhyve
-sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-brew install stern
+[https://developers.redhat.com/crw-hw/](https://developers.redhat.com/crw-hw/)
 
 ## Additional resources
     
