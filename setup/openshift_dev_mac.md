@@ -7,15 +7,15 @@ This document provides a list of software to install on a Mac for a RedHat OpenS
 - [MiniShift](#minishift)
 - [Additional resources](#additional-resources)
 
-##Prerequisites 
+## Prerequisites 
 
 You should install [HomeBrew](https://brew.sh/) 
 This was created on macOS 10.14.3 Mojave
 Some of the items listed here are not available for Windows 
 
-##Command line utilities
+## Command line utilities
 
-####OpenShift client utilities -- oc 
+#### OpenShift client utilities -- oc 
 ```
 brew install openshift-cli
 ```
@@ -37,7 +37,7 @@ Stern -- Log tail for multiple kube clusters
 brew install stern
 ```
 
-##Minishift
+## Minishift
 Minishift is called RedHat Container Development Kit
 
 ### Red Hat Container Development Kit 3.8 -- Mar 2019
