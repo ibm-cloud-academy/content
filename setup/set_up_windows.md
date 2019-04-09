@@ -8,8 +8,7 @@ This document provides the steps to install the software required to begin the e
 4. Add JAVA_HOME variable to the System PATH
 5. Install Gradle
 6. Install node.js
-7. Install the MYSQL client
-8. Install Cygwin
+7. Install Cygwin
 
 ## Step 1:  Install curl
 1. Create a folder named:  __C:\curl__.
@@ -65,13 +64,7 @@ Add JAVA_HOME to the Path by editing an environment variable.
 4. Verify the installation. At a command prompt, type `node -v`. The response is a version number.
 5. Type `npm -v`. The response is a version number, along with a notice about any updates that are available.
 
-## Step 7: Install the MYSQL Client
-1. Open a browser to https://dev.mysql.com/downloads/mysql/
-2. Download the ZIP Archive version of the Windows 64 bit MYSQL 5.7 Installer. It should be approximately 320 MB.
-3. When the ZIP archive is downloaded, extract it to the directory of your choice.
-4. You will only need the mysql.exe executable. From the bin subdirectory under your extraction directory, move or copy the mysql.exe file to any directory in your PATH.
-
-## Step 8: Install Cygwin
+## Step 7: Install Cygwin
 
 There are certain times in the labs where the way that Windows interprets quote characters makes it easier for you to issue those commands from a Linux shell. You can have that Linux shell available by installing Cygwin.
 
