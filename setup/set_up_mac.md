@@ -7,7 +7,6 @@ This document provides the steps for installing the software required to begin t
 5. Install Xcode  
 6. Install Gradle  
 7. Install node.js   
-8. Install the MYSQL client
 
 ## Step 1: Install curl
 1. In your browser, go to `http://macappstore.org/curl/`. Follow the installation instructions on the web site.
@@ -73,7 +72,3 @@ The response is the version number (for example, v4.2.6).
 `npm -v`  
 Again, the response is the version number.
 
-## Step 8: Install the MYSQL client
-The easiest way to do this is to just install the full MYSQL product, then use the client from it. You should install MYSQL version 5.7.
-1. Type
-`brew install mysql@5.7`
