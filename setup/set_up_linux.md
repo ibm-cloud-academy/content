@@ -11,7 +11,6 @@ If you are working with a native Linux machine and not a virtual machine, you ca
 6. Install Java JDK 1.8  
 7. Create JAVA_HOME environment variable  
 8. Install node.js  
-9. Install the MYSQL client
 
 If you are going to create a Linux virtual machine on a Windows host, verify the following:  
 1. make sure you have at least 22GB of available disk space (20GB for virtual disk and 2GB for the Ubuntu iso image).  
@@ -167,9 +166,3 @@ Ubuntu includes Node.js in its default repositories.  The version that was used 
   zlib: '1.2.8' }
 ```
 
-## Step 9: Install the MYSQL client
-You can install MYSQL version 5.7 client using apt.
-1. Type
-`sudo apt install mysql-client-5.7`
-
-This completes the setup tasks for Linux.
