@@ -1,6 +1,11 @@
-# Preparing a Windows machine for the Labs
+# Preparing a Windows 7 machine for the Labs
 
-This document provides the steps to install the software required to begin the exercises on a Windows machine.  The instructions were written for a Windows 7 Professional machine.  Exceptions have been noted for Windows 8 and Windows 10. The sequence is as follows:
+If you are using Windows 10, the preferred environment for the labs is to use `Windows Subsystem for Linux`. Follow the instructions at the link below to set up your Windows 10 workstation for the lab exercises.
+
+[Setting up Windows 10 for the lab exercises](https://ibm-cloud-academy.github.io/set_up_windows10.html)
+
+
+This document provides the steps to install the software required to begin the exercises on a Windows 7 machine.  Exceptions have been noted for Windows 8 and Windows 10. The sequence is as follows:
 
 1. Install cURL
 2. Install the IBM Cloud Developer Tools
@@ -23,9 +28,7 @@ Scroll to the __Win64-Generic__ section.  Locate the latest Win64 ia64 zip versi
 
 ## Step 2: Install the IBM Cloud Developer Tools
 
-1. Follow the instructions at: 
-https://cloud.ibm.com/docs/cli/index.html#overview
-to install the IBM Cloud Developer Tools.
+1. Follow the instructions at [Getting started with the IBM Cloud CLI](https://cloud.ibm.com/docs/cli/index.html#overview) to install the IBM Cloud Developer Tools.
 
 ## Step 3: Install Java JDK 1.8
 

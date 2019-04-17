@@ -4,9 +4,8 @@ This document provides the steps for installing the software required to begin t
 2. Install the IBM Cloud Developer Tools
 3. Install Java 1.8  
 4. Create JAVA_HOME environment variable
-5. Install Xcode  
-6. Install Gradle  
-7. Install node.js   
+5. Install Gradle  
+6. Install node.js   
 
 ## Step 1: Install curl
 1. In your browser, go to `http://macappstore.org/curl/`. Follow the installation instructions on the web site.
@@ -18,9 +17,7 @@ This document provides the steps for installing the software required to begin t
 
 ## Step 2: Install the IBM Cloud Developer Tools
 
-1. Follow the instructions at: 
-https://cloud.ibm.com/docs/cli/index.html#overview
-to install the IBM Cloud Developer Tools.
+1. Follow the instructions at [Getting started with the IBM Cloud CLI](https://cloud.ibm.com/docs/cli/index.html#overview) to install the IBM Cloud Developer Tools.
 
 ## Step 3: Install Java JDK 1.8
 1. In a browser, open https://www.oracle.com
@@ -50,19 +47,11 @@ You should see the full path to the jdk.
 `java –version`  
 You should see information about the java version, the runtime environment, and Java HotSpot.
 
-## Step 5: Install Xcode
-1. In a browser search engine, type `xcode` and select [Xcode on the Mac App Store - iTunes Apple]( https://itunes.apple.com/ca/app/xcode/id497799835?mt=12).  
-2. Click the link __View in Mac App Store__.
-3. Click the __Get__ button.
-4. It changes to an __Install App__ button. Click it again.  
-NOTE: The download is approximately 4.5GB. It may take a long time.
-5. Verify the installation. Open __Xcode__, select __File > New > Playground__. Create the playground and verify that you see the string __Hello, playground__.
-
-## Step 6: Install Gradle
+## Step 5: Install Gradle
 1. Type
 ` brew install gradle`
 
-## Step 7: Install node.js
+## Step 6: Install node.js
 1. Type   
 	`brew install node `
 2. Verify the installation:  
